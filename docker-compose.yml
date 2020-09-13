@@ -2,7 +2,8 @@ version: '3'
 
 services:
   db:
-    image: 'postgres:9.5'
+    image: "postgres:12.2"
+    restart: always
     volumes:
       - 'postgres:/var/lib/postgresql/data'
 
