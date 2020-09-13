@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -qq -y --no-install-recommends \
 # Instalar o GNUPG
 RUN apt-get install -y gnupg
 
+RUN gem install bundler
+
 # Instalar NodeJS v8
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
     && apt-get install -y nodejs

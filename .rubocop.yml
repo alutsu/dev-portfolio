@@ -1,0 +1,14 @@
+require: rubocop-rails
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'libs/**/*'
+    - 'vendor/**/*'
+    - 'spec/**/*'
+    - 'tmp/**/*'
+  NewCops: enable
+  TargetRubyVersion: 2.5.1
+
+Rails:
+  Enabled: true
